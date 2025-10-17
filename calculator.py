@@ -11,6 +11,13 @@ def divide(a, b):
         return a / b
     else:
         return "Ошибка: деление на ноль"
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Ошибка: введите число")
+
 # Основная программа
 print("Простой калькулятор")
 print("Доступные операции: +, -, *, /")
