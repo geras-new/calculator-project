@@ -1,4 +1,10 @@
 # Простой калькулятор
+def get_number(prompt):
+    while True:
+        try:
+            return float(input(prompt))
+        except ValueError:
+            print("Ошибка: введите число")
 def add(a, b):
     return a + b
 
@@ -11,13 +17,12 @@ def divide(a, b):
         return a / b
     else:
         return "Ошибка: деление на ноль"
-def get_number(prompt):
-    while True:
-        try:
-            return float(input(prompt))
-        except ValueError:
-            print("Ошибка: введите число")
 
+def power(a, b):
+    return a ** b
+def square_root(a):
+    return a ** 0.5
 # Основная программа
-print("Простой калькулятор")
-print("Доступные операции: +, -, *, /")
+print("Улучшенный калькулятор")
+print("Доступные операции: +, -, *, /, ^, sqrt")
+bash
